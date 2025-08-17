@@ -1,0 +1,89 @@
+
+[colors]
+primary = { background = "#121212", foreground = "#e0e0e0" }  # 深灰背景 + 浅灰文字
+
+[colors.normal]
+black   = "#121212"
+red     = "#ff3333"
+green   = "#33ff33"
+yellow  = "#ffff33"
+blue    = "#3399ff"
+magenta = "#ff33ff"
+cyan    = "#33ffff"
+white   = "#e0e0e0"
+
+[colors.bright]
+black   = "#555555"
+red     = "#ff7777"
+green   = "#77ff77"
+yellow  = "#ffff77"
+blue    = "#77aaff"
+magenta = "#ff77ff"
+cyan    = "#77ffff"
+white   = "#ffffff"
+
+[colors.cursor]
+text = "#121212"   # 光标下的文字保持背景色
+cursor = "#3399ff" # 光标为蓝色高亮
+
+[cursor]
+style = "Block"
+
+[font]
+size = 11.0
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[mouse]
+hide_when_typing = false
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
+
+#[terminal.shell]
+#args = ["--login"]
+#program = "/bin/bash"
+
+[window]
+decorations = "buttonless"
+dynamic_title = true
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[window.padding]
+x = 5
+y = 5
+
+[window.position]
+x = 50
+y = 50
+
+[general]
+live_config_reload = true
+
+[terminal]

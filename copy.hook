@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = linux  # 只监听 `linux` 包的安装/升级
+
+[Action]
+Description = Running custom script after kernel update...
+When = PostTransactionExec = sudo /boot/copy.sh
+Exec = /usr/local/bin/
+copy.hook
